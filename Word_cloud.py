@@ -59,16 +59,6 @@ for i in split_parts:
 # perche' ho dovuto premere 3 volte per eliminarli tutti?
 
 
-wordcloud=WordCloud().generate(split_parts[3])
-
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
-plt.show()
-
-
-
-# ora qwuello vero
-
 text = " ".join(i for i in split_parts)
 
 barbie_mask = np.array(Image.open("C:/Users/Owner/Downloads/barbie-silhouette-png-9.png"))
